@@ -1,3 +1,20 @@
-<h2 id='title'>Welcome to Ember.js</h2>
+<h2>Classic</h2>
 
-{{outlet}}
+{{input value=name}}
+
+{{#hello-world name=name}}
+  Yield!
+{{/hello-world}}
+
+
+<hr>
+
+
+<h2>HTMLBars</h2>
+
+<input value={{name}}>
+
+<hello-world name={{name}}>
+  Yield!
+</hello-world>
+
